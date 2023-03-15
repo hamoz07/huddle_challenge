@@ -1,0 +1,200 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    background-image: url("../imgs/images/bg-desktop.svg");
+    background-size: cover;
+    background-color: hsl(257, 40%, 49%);
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #954ECA;
+}
+
+a {
+    text-decoration: none;
+}
+
+.components {
+    width: 1200px;
+    max-width: 100%;
+}
+
+/* nav{
+    padding-top: 20px;
+} */
+img {
+    width: auto;
+}
+
+nav {
+    padding-bottom: 30px;
+    width: 170px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+}
+
+.content>div {
+    flex: 1;
+}
+
+.content .huddle-text {
+    font-size: .7rem;
+    margin-left: 40px;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: Poppins, sans-serif;
+    margin: 0 0 10px 0;
+}
+
+.content .huddle-text p {
+    opacity: .9;
+    line-height: 1.7rem;
+    font-size: 0.9rem;
+}
+
+.content .huddle-text a.register {
+    background-color: white;
+    color: hsl(257, 40%, 49%);
+    padding: 13px 54px;
+    border-radius: 25px;
+    display: inline-block;
+    width: -moz-fit-content;
+    width: fit-content;
+    transition: all .3s;
+    margin-top: 20px;
+}
+
+.content .huddle-text a.register:hover {
+    color: white;
+    background-color: #E882E8;
+}
+
+.components>div:last-of-type {
+    text-align: right;
+}
+
+.components>div:last-of-type a i {
+    color: #fff;
+    position: relative;
+    font-size: 18px;
+    transition: .3s all ease;
+    text-align: center;
+}
+
+/* .components > div:last-of-type a{
+    align-items: center;
+    color: white;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    transition: .3s;
+} */
+
+.components>div:last-of-type a i::after {
+    content: "";
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: .3s all ease;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: -14px;
+    bottom: -13px;
+}
+
+.components>div:last-of-type a i:hover::after {
+    border-color: hsl(300, 69%, 71%);
+
+}
+
+.components>div:last-of-type a:hover i {
+    color: hsl(300, 69%, 71%);
+}
+
+.components>div:last-of-type a:not(:last-child) {
+    margin-right: 35px;
+}
+
+.components>p {
+    text-align: center;
+    display: block;
+}
+
+.components > p a{
+color: chartreuse;
+}
+@media screen and (max-width:991px) {
+    body {
+        width: 400px;
+        margin: 30px auto;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .content img {
+        padding: 0 20px;
+
+    }
+
+    .content .huddle-text {
+        font-size: .7rem;
+        text-align: center;
+        margin: 10px 0 0 0;
+    }
+
+    .content .huddle-text a {
+        margin: 10px auto;
+    }
+
+    .content h1 {
+        font-size: 1.6rem;
+    }
+
+    .components>div:last-of-type {
+        text-align: center;
+        margin-top: 24px;
+
+    }
+
+    .components>p {
+        margin-top: 25px;
+        font-size: 10px;
+        text-align: center;
+    }
+}
