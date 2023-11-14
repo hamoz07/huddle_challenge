@@ -22,6 +22,12 @@ Your users should be able to:
 - See hover states for all interactive elements on the page
 
 Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
+## Live Demo
+
+live project:https://hamoz07.github.io/huddle_challenge/
+
+## screenshot
+![image](https://github.com/hamoz07/huddle_challenge/assets/112629005/c74aaa35-b080-4044-9fec-653377678911)
 
 ## Where to find everything
 
